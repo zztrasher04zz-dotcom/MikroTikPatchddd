@@ -2,6 +2,11 @@ name: Patch v7
 
 on:
   workflow_dispatch:
+    inputs:
+      INPUT_VERSION:
+        description: 'Input VERSION CODE (e.g., 7.1.1)'
+        required: true
+        default: '7.17.1'
 
 permissions:
   contents: write
